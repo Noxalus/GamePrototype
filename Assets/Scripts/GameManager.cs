@@ -11,6 +11,8 @@ namespace GamePrototype
         [SerializeField]
         private Text _selectedItemText = null;
 
+        public ItemPlacer ItemPlacer => _itemPlacer;
+
         private void Start()
         {
             _itemPlacer.OnItemChanged += OnItemChanged;
